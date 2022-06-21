@@ -1,0 +1,28 @@
+		======================================
+			Importance of Modules in Python
+			             and
+			Types of Modules
+		======================================
+=>We know that Functions concept is used for Performing Certain Operation and Provides Code Re-usability.
+=>Functions Concept provides Code Re-usability within in the same program and unable to provide Code Re-usability across the programs.
+=>In order to provide Code Re-usability across the programs, we must use the concept of MODULES.
+--------------------------------------
+=>Definition of Module:
+--------------------------------------
+=>A Module is a collection of Variables (Global Variables), Functions and Classes.
+---------------------------------------------------------------------------------------------------------------------------
+Types of Modules:
+-----------------------------
+=>We have two types of Modules. They are
+		a) Pre-defined (or) Built-in Modules
+		b) Programmer-defined Module
+-------------------------------------------------------
+a) Pre-defined (or) Built-in Modules:
+-------------------------------------------------------
+=>These Modules are already developed by Python developers and available in Python software and they are used by Python Programmers and whose role is to deal with Universal requirements.
+
+Example:    functools, random, calendar, re, cx_Oracle, Mysq--connector....etc
+------------------------------------------------
+b) Programmer-defined Module
+--------------------------------------------------
+=>These Modules are developed by Python Programmers and available in python project and whose role is to deal with Common requirement

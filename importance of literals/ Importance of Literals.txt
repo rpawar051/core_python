@@ -1,0 +1,15 @@
+	===========================================
+		             Importance of Literals
+	===========================================
+=>Literals are nothing but the values passing to the program as Input.
+=>In Python we have 4 types of Literals. They are
+
+			1) Integer Literals
+				Example:  99 456   123    6734  ... etc
+			2) Float Literals
+			        Example:   34.56  12.34  , 0.99....etc
+			3) String Literals
+			        Examples:  "Python Programming",  "Rossum"..etc   
+			4) Boolean Literals.
+				Examples:   True   False
+

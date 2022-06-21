@@ -1,0 +1,13 @@
+#RelOpEx.py
+a=int(input("Enter Value of a:"))
+b=int(input("Enter Value of b:"))
+print("----------------------------------------------------")
+print("\tResults of Relational Operators:")
+print("----------------------------------------------------")
+print("\t{} > {}---->{}".format(a,b,a>b) )
+print("\t{} < {}---->{}".format(a,b,a<b))
+print("\t{} == {}---->{}".format(a,b,a==b))
+print("\t{} != {}---->{}".format(a,b,a!=b))
+print("\t{} >= {}---->{}".format(a,b,a>=b))
+print("\t{} <= {}---->{}".format(a,b,a<=b))
+print("----------------------------------------------------")

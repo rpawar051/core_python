@@ -1,0 +1,31 @@
+			=========================================
+						bool
+			=========================================
+=>'bool' is one of the pre-defined class <class,'bool'> and treated as data type
+=>This data type is used for storing True, False Values only ( also called Logical values)
+=>Internally, the value of True is 1 and the value of False is 0
+
+Examples:
+------------------
+>>> a=True
+>>> print(a)----------True
+>>> type(a)----------<class 'bool'>
+>>> b=False
+>>> print(b)------------False
+>>> type(b)---------<class 'bool'>
+Special Examples:
+-----------------------------
+>>> print(True+False)----------1
+>>> print(True+True)--------2
+>>> print(True-True)--------0
+>>> print(False-True)-----------1
+>>> print(False*True+True)------1
+>>> print(False+True*True)-----1
+
+>>> print(True+12)----------13
+>>> print(False*True+12)-----12
+>>> print(True+0b1111)---------16
+>>> print(True+0xAB)----------172
+>>> print(True+0xAB*False)------1
+>>> print(True+False+0b1111+0xAB+0o12)---197 ( 1+0+15+171+10)
+=======================================================================

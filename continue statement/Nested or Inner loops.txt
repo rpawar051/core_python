@@ -1,0 +1,36 @@
+			========================================
+				Nested / Inner loops 
+			========================================
+=>The process of writting one loop inside of another loop is called Inner (or) nested loop.
+=>The execution concept of Nested / Inner loops  is that for every value of outer loop , inner loop will execute many number of times.
+
+Syntax1:-      for  varname1 in Iterableobj1:     # outer loop
+                              ---------------------------------
+			      ---------------------------------
+                            for varname2 in Iterableobj2:  # inner loop
+			              -----------------------------
+				      -----------------------------
+
+Syntax2:-        --------------------------------------
+			while(Test Cond1):   # outer loop
+			         --------------------
+				 --------------------
+				 while(Test Cond2): # inner loop
+				        ---------------------
+					---------------------
+
+Syntax3:
+--------------		  for  varname1 in Iterableobj1:     # outer loop
+                              ---------------------------------
+			      ---------------------------------
+			      while(Test Cond2):               # inner loop
+				        ---------------------
+					---------------------
+
+Syntax-4:		--------------------------------------
+			while(Test Cond1):                        # outer loop
+			         --------------------
+				 --------------------
+				  for varname2 in Iterableobj2:  # inner loop
+			              -----------------------------
+				      -----------------------------

@@ -1,0 +1,43 @@
+		================================================
+					Files in Python
+		================================================
+Index
+--------------
+=>Purpose of Files
+=>Types of Applications in the context of files
+		a) Non-Persistant Applications
+		b) Persistant Applications
+=>Definition of File (or) Stream
+=>Operations on Files
+		a) Write Operation
+
+		b) Read Operation
+=>File Opening Modes:
+			a) r
+			b) w
+			c) a 
+			d) r+
+			e) w+
+			f) x 
+=>Syntax for opening a files:
+			a) open()
+			b) with...open()...as 
+=>Functions Used in Write Operation
+			a) write()
+			b) writelines()
+=>Functions Used in Read Operation
+			a) read()
+			b) read(no.of char)
+			c) readline()
+			d) readlines()
+=>Random Access files
+			a) seek()
+			b) tell()
+=>Programming Examples
+=>Object Serialization and De-serialization
+		a) Pickling 
+		b) Un-Pickling
+=>pickle module
+=>Programming Examples
+
+

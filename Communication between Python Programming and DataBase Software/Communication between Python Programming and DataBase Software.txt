@@ -1,0 +1,28 @@
+		================================================================
+		     Communication between Python Programming and DataBase Software
+		================================================================
+=>The main reason for choosing database software is that It has the following Advantages.
+
+a) Data base software is secured, bcoz Database software provides User name and password
+b) Querying the data from database software is quite easy
+c) Database softwares stores large volume of data
+d) Database software are OS Independent.
+e) Database level Persistency provides Higher Efficiency.
+--------------------------------------------------------------X------------------------------------------------------------------
+=>Programatically to communicate with any database software, Python program must use the corresponding data base Module.
+=>For example, If Python Programmer want to communicate with Oracle Data base then python Programer must use cx_Oracle module.
+=>For example, If Python Programmer want to communicate with MySQL Data base then python Programer must use MySQL-Connector  module.
+
+=>In general, If a Python Programmer want to communicate with any data base then Then python Programmer must INSTALL the Corresponding data base module by using PIP tool.
+
+-------------------------------------------------------------
+Syntax for Installing Data base Modules
+-------------------------------------------------------------
+	pip  install    module name
+
+Example:-  install cx_Oracle for communicating with oracle data base.
+
+		pip  install  cx_Oracle
+
+Example 2 :- install MySQL-Connector for communicating with MySQL data base. 
+        pip install MySQL-Connector

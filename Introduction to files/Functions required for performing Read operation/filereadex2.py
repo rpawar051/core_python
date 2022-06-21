@@ -1,0 +1,32 @@
+#FileReadEx2.py
+#This Program reads the specified number of chars from the file and dispalys the file data on the console-read(no.of chars)
+try:
+	with open("crs.info","r") as fp:
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		print("-"*50)
+		filedata=fp.read(6)
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		print("-"*50)
+		filedata=fp.read(10)
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		filedata=fp.read()
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		fp.seek(0)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind)) # 0
+		filedata=fp.read()
+		print(filedata)
+		print("-"*50)
+except FileNotFoundError:
+	print("File does not exists")

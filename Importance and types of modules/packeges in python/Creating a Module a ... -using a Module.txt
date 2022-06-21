@@ -1,0 +1,72 @@
+		===========================================
+			Creating a Module and Re-using a Module
+		===========================================
+==================
+Creating a Module
+==================
+=>"Creating a Programmer-defined module is nothing but defining / writting function(s), Variables  (global Variables) and classes and save in some file name with an extension .py i.e Filename.py.   Here Filename itself acts as  Module Name.
+
+Example:-  calculation.py----->File name (calculation is called module name )
+		   icici.py-------------->File Name (icici   is called module name )
+---------------------------------------------------------------------------------------------------------------------
+Re-using a Module
+================
+=>Re-using a Module is nothing but accessing the variables , Functions and classes of one program into another program.
+
+=> To re-use the modules, we have two approaches. They are
+	
+		a) By using import 
+		b) By using   from.....import 
+------------------------------------------------------------------
+a) By using import:
+------------------------------------------------------------------
+=>here 'import' is a keyword
+=>When we use import approach, for re-using the Variables, Functions, and classes of the Module then the Variables, Functions, and classes must be accessed w.r.t Module Name otherwise we get Error
+---------------------------------------------------
+Syntax-1 for importing a module:
+--------------------------------------------------
+import    module name
+----------------------------------------------------------------
+Syntax-2 for importing multiple  modules:
+----------------------------------------------------------------
+import    module name1, module name2.....module name-n
+---------------------------------------------------------------------------
+Syntax-3 for importing a module with alias name:
+----------------------------------------------------------------------------
+import    module name  as  alias-name
+------------------------------------------------------------------------------
+Syntax-4 for importing multiple  modules with alias names:
+------------------------------------------------------------------------------------------
+import    module name1 as alias-name1, module name2 as alias-name2.....module name-n													as alias-name-n
+-----------------------------------------------------------------------------------------------------------------------------	=>After Importing the module in the current python Program with import approach, we mus access the variables, functions and class as follows.
+
+		Modulename.Variable Name
+		Modulename.Function Name
+		Modulename.Class Name
+===================================================================
+b) by Using  from.... import :
+-----------------------------------------------------------
+=>here 'from'  and   'import' are the keywords
+=>When we use from .....import approach, for re-using the Variables, Functions, and classes of the Module then the Variables, Functions, and classes can be accessed without  Module Name.
+----------------------------------------------------------------------------
+Syntax-1:
+--------------
+from module name   import  variables, Function names, class names
+---------------------------------------------------------------------------------------------------------
+Syntax-2:
+---------------------------------------------------------
+from module name   import  variables as alias-name, Function name as alias-name , class															name as alias-name
+---------------------------------------------------------------------------------------------------------
+Syntax-3:
+--------------------------------------------------------------------------------------------
+from module name   import  *     ( not recommended )
+----------------------------------------------------------------------------------------------
+=>After Importing the module in the current python Program with from...import approach, we mus access the variables, functions and class  without using module name as follows.
+
+		Variable Name
+		Function Name
+		Class Name
+====================================================================
+
+
+

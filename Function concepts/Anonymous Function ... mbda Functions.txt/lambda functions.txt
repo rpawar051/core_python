@@ -1,0 +1,47 @@
+		============================================
+		      Anonymous Functions (or) lambda Functions
+		============================================
+=>We know that Functions concept is used for "Performing some Operation and Provides Code Re-Usability"
+=>Example:     Compute sum of two numbers by using functions
+
+			def   sum(a,b):
+				c=a+b
+				return c
+    =>here sum() is one of the normal function name  and can  it re-used for finding sum of two nos.
+=> Anonymous Functions  are those which are not containing any name explicitly.
+=>The Purpose of  Anonymous Functions  is that " To Perform Instant Operations ". Instant Operations are those which are performing at that point of time (No longer interested to use in further )
+=>To develop  Anonymous Functions , we use a pre-defined keyword called "lambda" and hence  Anonymous Functions  are also called Lambda Functions.
+=> Anonymous Functions  contains single statement (But not possioble to write multiple lines of code)
+=>Anonymous Functions  returns the result automatically ( No need to write return statement )
+
+   -------------------------------------------------------------------
+=>Syntax for defining  Anonymous Functions :
+   -------------------------------------------------------------------
+	   varname=lambda  param-list : expression
+
+Explanation:
+--------------------
+=>varname is valid python variable name and it is treated as Function name
+=>lambda is akey word, which is used for defining  Anonymous Functions.
+=>param-list represents list variables names acts as Formal params and used for holding (or) storing the inputs coming function calls.
+=>Expression represents  a single executable statement and whose result returns                    automatically.
+
+Example:  Compute sum of two numbers by using Normal Functions
+
+			def   sum(a,b):
+				c=a+b
+				return c
+#Normal Function call		
+		res=sum(10,20)
+		print(res)------------30
+Example: Compute sum of two numbers by using Anonymous Functions.
+
+Anonymous Function Def:
+------------------------------------------------
+		sumop=lambda  a,b : a+b
+
+Anonymous Function Call:
+------------------------------------------
+		res=sumop(10,20)
+		print(res)---------30
+		print( sumop(30,40) )---- 70

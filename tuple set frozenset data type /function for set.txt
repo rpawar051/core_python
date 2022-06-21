@@ -1,0 +1,226 @@
+		========================================
+				Functions in set
+		========================================
+=>On the object of set, we can perform various operations by using the functions of set.
+=>The Funtions of set are:
+
+1) add()
+------------
+=>this functions is used for adding an element to set object.
+
+=>Syntax:-    setobj.add(element)
+
+Examnples:
+-----------------
+>>> s1={10,"KVR","OUCET"}
+>>> print(s1, type(s1))------------{'OUCET', 10, 'KVR'} <class 'set'>
+>>> print(id(s1))---------1932468188320
+>>> s1.add(92.45)
+>>> print(s1, type(s1))-------{'OUCET', 10, 'KVR', 92.45} <class 'set'>
+>>> print(id(s1))-----1932468188320
+-----------------------------------------------------------------------------------------------------------
+2) clear():
+-----------------
+=>This removes all the elements  of set object
+=>Syntax:-     setobj.clear()
+Example:
+-------------
+>>> s1={10,"KVR","OUCET"}
+>>> print(s1, type(s1))---------{'OUCET', 10, 'KVR'} <class 'set'>
+>>> print(id(s1))---------1932471422304
+>>> s1.clear()
+>>> print(s1, type(s1))--------set() <class 'set'>
+----------------------------------------------------------------------------------------------------
+3) discard():-
+=>This functions is used for removing a perticular element from set object
+=>if a perticular element of set object is not found then this function will not give any errror.
+=>Syntax:     setobj.discard(element)
+
+Examples:
+--------------------
+>>> s1={10,"KVR","OUCET"}
+>>> s1.add("Hyd")
+>>> s1.add(55.55)
+>>> print(id(s1),s1)----------1932468188320 {10, 'Hyd', 'KVR', 55.55, 'OUCET'}
+>>> s1.discard("OUCET")
+>>> print(id(s1),s1)------1932468188320 {10, 'Hyd', 'KVR', 55.55}
+>>> s1.discard("OU")
+>>> print(id(s1),s1)------1932468188320 {10, 'Hyd', 'KVR', 55.55}
+----------------------------------------------------------------------------------------------------------------------
+4) remove()
+-------------------
+=>This functions is used for removing a perticular element from set object otherwise we         get KeyError
+
+=>Syntax:-    setobj.remove(element)
+---------------
+Example:
+--------------
+>>> s1={10,"KVR","OUCET"}
+>>> print(id(s1),s1)-------------1932471422528 {'OUCET', 10, 'KVR'}
+>>> s1.remove(10)
+>>> print(id(s1),s1)-------1932471422528 {'OUCET', 'KVR'}
+>>> s1.remove(100)--------KeyError: 100
+----------------------------------------------------------------------------------------------------------
+5) pop()
+------------
+=>This functions is used for removing an arbitrary element from set object 
+=>when we apply this function on empty set object then we get  KeyError
+=>Syntax:   setobj.pop()
+Examples:
+-------------------
+>>> s1={10,"KVR","OUCET"}
+>>> s1.pop()-------------'OUCET'
+>>> print(s1)----------{10, 'KVR'}
+>>> s1.pop()---------10
+>>> print(s1)---------{'KVR'}
+>>> s1.pop()----------'KVR'
+>>> print(s1)----------set()
+>>> s1.pop()-------->KeyError: 'pop from an empty set'
+----------------------------------------------------------------------------------------------------------------------------------
+6) isdisjoint
+---------------------------------------------------------------------------------------------------------------------------
+=>disjoint sets are those which are not having common values.
+=>This function returns True provided set objects are disjoint otherwise ut returns False
+
+Syntax:-      setobj1.isdisjoint(setobj2)
+
+Examples:
+----------------
+>>> s1={10,20,30,40,50}
+>>> s2={40,50}
+>>> s3={5,15,25,35}
+>>> s1.isdisjoint(s3)----------------True
+>>> s1.isdisjoint(s2)-------------False
+------------------------------------------------------------------------------------------
+7)issubset():
+----------------------
+=>This function returns True Provided one set is sub set of another set otherwise it returns False.
+=>Syntax:-    setobj1.issubset(setobj2)
+-----------------------
+8)issuperset()
+----------------------
+=>This function returns True Provided one set is super set of another set otherwise it returns False.
+=>Syntax:-    setobj1.issuperset(setobj2)
+
+Examples:
+-----------------
+>>> s1={10,20,30,40,50}
+>>> s2={40,50}
+>>> s3={5,15,25,35}
+>>> s2.issubset(s3)---------False
+>>> s2.issubset(s1)--------True
+>>> s1.issubset(s3)--------False
+>>> s3.issubset(s1)------False
+>>> s2.issubset(s2)-------True
+>>> s1.issuperset(s2)--------True
+>>> s2.issuperset(s1)------False
+>>> s1.issuperset(s3)---------False
+>>> s1.issuperset(s1)-------True
+------------------------------------------------------------------
+9) union()
+-----------------
+=>This function is used of obtaining union of all the set objects.
+Syntax:-     setobj3=setob1.union(setobj2)
+Examples:
+---------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3={"x","m","n"}
+>>> print(s1,s2))-----------------{'y', 'x', 'z', 'k'} {'x', 'a', 'b', 'c'}
+>>> s3=s1.union(s2)
+>>> print(s3)--------{'a', 'b', 'x', 'c', 'y', 'z', 'k'}
+>>> s4=s1.union(s2).union(s3)
+>>> print(s4)---------{'a', 'b', 'x', 'c', 'm', 'y', 'z', 'k', 'n'}
+------------------------------------------------------------------------------
+Special Case:  (Union operation with Bitwise OR |    )   
+--------------------------------------------------------------------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3={"x","m","n"}
+>>> s4=s1|s2
+>>> print(s4)
+{'a', 'b', 'x', 'c', 'y', 'z', 'k'}
+>>> s4=s1|s2|s3
+>>> print(s4)
+{'a', 'b', 'x', 'c', 'm', 'y', 'z', 'k', 'n'}		
+------------------------------------------------------------------------------------------------
+10) intersection:
+------------------------------
+=>=>This function is used of obtaining common elements of all the set objects.
+
+Syntax:-     setobj3=setob1.intersection(setobj2)
+Examples:
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3={"x","m","n"}
+>>> s4=s1.intersection(s2)
+>>> print(s4)----------------{'x'}
+>>> s4=s1.intersection(s2).intersection(s3)
+>>> print(s4)-------{'x'}
+
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3={"p","m","n"}
+>>> s4=s1.intersection(s2).intersection(s3)
+>>> print(s4)----------set()
+>>> s4=s1.intersection(s2,s3)
+>>> print(s4)------set()
+---------------------------------------------------
+Special case (Intersection operation with Bitwise and  &    )   
+-------------------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3={"p","m","n"}
+>>> s4=s1&s2   #here '&' is called Bitwise And
+>>> print(s4)-----------{'x'}
+>>> s4=s1&s2&s3--------
+>>> print(s4)--------set()
+-------------------------------------------------------------------------------------------------------
+11) difference:
+----------------------
+=>This function is used for obtaining difference of source obj and destination obj. 
+   (this function removes the common elements from source obj and destination obj and display only elements from source obj )
+
+=>Syntax:-    setobj3=sourceobj.difference(destination obj)
+
+Examples:
+-------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> print(s1)-------------{'y', 'x', 'z', 'k'}
+>>> print(s2)----------{'x', 'a', 'b', 'c'}
+>>> s3=s1.difference(s2)
+>>> print(s3)------------{'y', 'z', 'k'}
+>>> s3=s2.difference(s1)
+>>> print(s3)-----------{'a', 'b', 'c'}
+
+Special Case:  (difference operation with minus  - )
+----------------------------------------------------------------------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3=s1-s2
+>>> print(s3)-----------{'y', 'z', 'k'}
+>>> s3=s2-s1
+>>> print(s3)-----------{'a', 'b', 'c'}
+----------------------------------------------------------------------------------------
+12) symmetric_difference ()
+-----------------------------------------------
+=>This function is used for obtaining symmetric_difference  of two or more sets
+
+=>Syntax:-    setobj3=setobj1.symmetric_difference (setobj2)
+
+Examples:
+------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3=s1.symmetric_difference(s2)
+>>> print(s3)-----------{'a', 'b', 'c', 'y', 'z', 'k'}
+--------------------------------------------------------------------------------------------------------
+Special Case: ( symmetric_difference  with Bitwise Operator XOR  ^ )
+---------------------------------------------------------------------------------------------------------
+>>> s1={"x","y","z","k"}
+>>> s2={"a","b","c","x"}
+>>> s3=s1^s2
+>>> print(s3)
+{'a', 'b', 'c', 'y', 'z', 'k'}
+---------------------------------------------------------------------------------------------

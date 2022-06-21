@@ -1,0 +1,182 @@
+			===================================
+					Features of Python
+			===================================
+=>Features of language are nothing but services (or) facilities provided by Language developpers and they are used by language  programmers for developing real time applications.
+
+=>Python programming several features. They are
+
+		1. Simple 
+		2. Freeware and Open Source
+		3. Dynamically Typed Programming lang.
+		4. Platform Independent 
+		5. Portable
+		6. Interpreted 
+		7. High Level
+		8. Procedual and Object oriented 
+		9. Extensible
+		10. Embedded 
+		11. Supports Third Part APIs ( Numpy,Pandas, matplotlib, scikit,scipy.....etc)
+---------------------------------------------------------------------------------------------------------------------------
+1) Simple :-
+--------------------
+=>Python is Simple programming Language becoz of 3 important Technical Factors
+
+a) Python Programming Provides " Rich Set of APIs ". So that Python Programmer can	          Re-use the pre-defined code from APIs and develops the real time application.
+----------------------------------------------------------
+Def. of API (Application Programming)  :
+-------------------------------------------------------------
+=>An API is a collection of Moduels.
+=>A Module is a collection of Data Members(Variables), Functions and Classes
+Examples:    calendar,cmath,math, random, ....etc
+--------------------------------------------------------------------------------------------------
+b) Python Programing Provides In-Built facility called "Garbage Collector". So that Garbage Collector collects un-used memory space and imporoves the Performance of Python Based Application.
+-----------------------------------------
+Def. of Garbage Collector:-
+-----------------------------------------
+=>A Garbage Collector is one in-built back ground program in python software, which is running behind of regular python program and whose role is that to collect un-used memory space and improves the performance of python based application.
+--------------------------------------------------------------------------------------------------------------------------
+c) Python Programming Provides User-Friendly Syntaxes. So that we can develop error-free programs in less amount time.
+=====================================================================
+2. Freeware and Open Source:
+------------------------------------------------
+a) Freeware:
+------------------------------
+=>Since we are downloading the python software   from www.python.org freely and hence Python software is one of the Freeware.
+
+=>The standard Python software Name is CPYTHON, which is used all by all MNCs
+--------------------------
+b) Open Source:
+--------------------------
+=>Some of the companies came forward and customized CPYTHON and used in their operational level and such type of customized softwares are called Distributions  (or) Flavours .
+=>The following are the various Distributions  or Flavours of python.
+
+a) JYTHON (or) JPYTHON-----> It is used to run Java Based Application
+b) Iron Python --------------------->It is used for runing C#.NET Applications
+c) Ruby Python--------------------> It is used to run Ruby Based Applications
+d) Anakonda Python------------> It is used to run Big Data / Hadoop based Applications.
+e) Micro Python-----------> To Develop Micro Controller Applications.
+f) StackLess python-----> Used to develop concurrency based applications
+g) PyPY--------------------------> To speed up any python based application bcoz it contains							some special Program JIT ( Just-In Time compiler)
+------------------------------------------------------
+-------------------------------------------------------
+===================================================================
+3) Dynamically Typed Programming lang:
+----------------------------------------------------------------
+=>We have two types of Programming languages. They are
+
+		a) Static Typed Programming Langugaes
+		b) Dynamic Typed Programming Langugaes
+
+a) Static Typed Programming Langugaes:
+---------------------------------------------------------------
+=>In Static Typed Programming Languges, It is mandatory to use data type to store the data (Otherwise we get Compile time error)
+
+		int a,b,c; // Mandatory
+		a=10;
+		b=20
+		a=a+b;
+
+Examples:-   C,CPP,JAVA, .NET....etc
+-----------------------------------------------------------------
+b) Dynamic Typed Programming Langugaes
+-------------------------------------------------------------------
+=>In Dynamic Typed Programming Langugaes, it is not necessdary to specify the data type bcoz python Environment assigns the data type automatically depends on type of value stored in the variable.
+
+		a=10;   
+		type(a)   a--->< class, 'int'>
+		b=20     
+		type(b) b---<class, 'int'>
+		c=a+b;  
+		type(c)  c ---<class,'int>
+
+Examples:-    PYTHON   
+=>In Programming, every thing stored in the form "objects" ( behind of objects creation  there exists a  class)
+-------------------------------------------------------------------------------------------------------------------------
+4. Platform Independent :(Platform--->Type of being Used )
+-------------------------------------------------------------------------------------------------------
+Def: A lang or Tech is said to be Platform Independent if and only if whose applications runs all types of OSes.
+
+Property:
+-----------------
+=>The Python Organizes the data in the form of objects they does not have any restriction on string on any OS
+
+=>The object data can Grow and shrink without considering OS
+
+Examples:
+-----------------
+=>C,CPP..... etc ------> Platform Dependent 
+=>Java ---------------->       Platform Independent ( Property)
+=>Python ---------------->   Platform Independent (Property )
+=====================================================================
+6. Interpreted :
+----------------------------
+=>In Python Programmming Environment, The Python compiler converts source code into intermediate code Line by Line and in execution phase PVM reads line by line of byte code and coverted into Machine Understandable Code  and gets the result
+
+=>In Python Program we don't compile separately.
+=>In python programming  environment, we directly execute python Program                                   (Compilation +execution)
+
+=>Since In Python Programmming environment, Compilation Taken place line by line and execution line by line and hence Python is one of the Interpretation Based Programmming Language.
+
+---------------------------------------------------------------------------
+Examples:
+---------------------------------------------------------------------------
+=>C,CPP....etc-----> Compilation Programming Lang
+
+=>Java Programming---> Compilation and Interpretation Based Programing lang.
+
+=>8086(Assembly language Programing)--->Interpretation Programming Lang
+
+=>PYTHON----->Interpretation Programming Lang
+-----------------------------------------------------------------------------------------------------
+4) Portable:  [ Easy to Move / carry]
+-----------------------------------------------------------------------------------------------------
+=>A portable application/project / program  is one, which runs on all OSes  and processors without considering their vendors and architectures.
+
+Examples:  Python is one of portable lang
+		
+		   C, CPP  lang applications belongs non-portable.
+-----------------------------------------------------------------------------------------------------
+
+8. Both Procedural and Object Oriented
+-------------------------------------------------------------------------------
+=>In Python Programming , we can write the programming in two ways.
+			a) Procedure Oriented (Functional Approach)
+			b) Object Oriented Approach
+--------------------------------------------------------------------------------------------------------
+6) High Level programming lang:
+---------------------------------------------------
+=>In the context of python, we have two languages. They are
+		a) Low  level programming  Lang
+		b) High Level Programming Lang
+a) Low  level programming  Lang:
+---------------------------------------------------
+In  Low  level programming  Lang, we use store the data in the form of binary format and it is a complex process.
+
+In  High  level programming  Lang, we use store the data in the form Decimal Number System (0,1,2,3...9) and looks like a normal english statements
+
+-------------------------------------------------------------------------------------------------------------------------
+9. Extensible
+---------------------
+=>Python Programming Provides its services to other Programmming langugaes and hence Python is one of the extensible language
+=>Example:- C Program can call the code of Python language.
+
+Real Time Fact:- You Tube<-----C,CPP,JAVA, PYTHON(60%)
+-------------------------
+10. Embedded 
+-------------------------
+=>This feature says Python Program can call other languages Code.
+Example:  A python Program can Call C Program code
+--------------------------------------------------------------------------------------------------------------------
+
+11) Supports Third Part APIs ( Numpy,Pandas, matplotlib, scikit,scipy.....etc)
+-------------------------------------------------------------------------------------------------------------------
+=>By default Python Programming Programming Rich In-Built API (Modules....) and it can do many services and Python can also uses  Supports Third Part APIs ( Numpy,Pandas, matplotlib, scikit,scipy.....etc) for its effective efficient Programming
+================================X=======================================
+
+
+
+
+
+
+
+

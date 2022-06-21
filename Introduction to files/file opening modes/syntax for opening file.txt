@@ -1,0 +1,18 @@
+		==============================================
+				Syntax for Opening the Files
+		==============================================
+=>To Open the file with help of file opening modes, we have 2 syntaxex. They are
+		1) open()
+		2) with     open ()    as 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+1) open():
+ ---------------
+=>Syntax:                    varname=open("FileName", "File Opening Mode")
+--------------------
+Explanation:
+-------------------
+1) varname is one of the valid python variable and it is treated as File Pointer (object) and whose type TextIOWrapper.
+2) open() is one of the pre-defined function and it used for opening the file in the specified  mode.
+3) "File Name" is nothing name of the file
+4) "File Opening Mode" represents any file opening mode i.e   r,w,a,r+,w+,a+,x 
+==========================================X==================================================

@@ -1,0 +1,11 @@
+============================================================
+			Types of Arguments / Parameters (Types of Passing Arguments )
+		============================================================
+=>In Python Programming, we have 5 types of Types of Arguments / Parameters. They are
+	
+		1. Possitonal Arguments / Parameters
+		2. Default Arguments / Parameters
+		3. Keyword Arguments / Parameters
+		4. Variable Length Arguments / Parameters
+		5. Keyword Variable Length Arguments / Parameters
+--------------------------------------------------------------------------------------------------------------------------

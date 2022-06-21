@@ -1,0 +1,104 @@
+		================================================
+			Functions required for performing Read operation
+		================================================
+=>To Read the data / information from the file, First we must open the file in r and r+  modes.
+=>We have 4 functions to read the data from the file. They are
+
+			1) read()
+			2) read(no.of chars)
+			3) readline()
+			4) readlines()
+1) read():
+ -------------
+=>This function is used for reading entire data from the file and in the str
+
+=>Syntax:-                 varname=filepointer.read()			
+------------------------------------------------------------------
+#FileReadEx1.py
+#This reads the from the file and dispalys the file data on the console-----read()
+try:
+	fname=input("Enter File Name for reading its content:")
+	with open(fname,"r") as fp:
+		filedata=fp.read()
+		print(filedata)
+except FileNotFoundError:
+	print("File does not exists")
+-------------------------------------------------------------------
+2) read(no.of chars)
+--------------------------------
+=>This function is used for reading specified number of characters from the file in the form of str
+
+=>Syntax:-       varname=filepointer.read(no. of chars)			
+
+Examples:
+-----------------
+#FileReadEx2.py
+#This Program reads the specified number of chars from the file and dispalys the file data on the console-read(no.of chars)
+try:
+	with open("crs.info","r") as fp:
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		print("-"*50)
+		filedata=fp.read(6)
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		print("-"*50)
+		filedata=fp.read(10)
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		filedata=fp.read()
+		print(filedata)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind))
+		fp.seek(0)
+		print("-"*50)
+		ind=fp.tell()
+		print("Position of fp:{}".format(ind)) # 0
+		filedata=fp.read()
+		print(filedata)
+		print("-"*50)
+except FileNotFoundError:
+	print("File does not exists")
+==========================================X====================================
+3) readline():
+  ------------------
+=>This function is used for reading one line at a time  from file and returns in the form of str
+
+=>Syntax:-         varname=filepointer.readline()
+
+Examples:
+-----------------
+#FileReadEx3.py
+#This Program reads a single  data from the file and dispalys the file data on the console-----readline()
+try:
+	with open("crs.info","r") as fp:
+		filedata=fp.readline()
+		print(filedata)
+		ind=fp.tell()
+		print("Pos of fp=",ind)
+		filedata=fp.readline()
+		print(filedata)
+except FileNotFoundError:
+	print("File does not exists")
+---------------------------------------------------------------------------------------------------------------------------------------
+4) readlines():
+--------------------
+=>This function is used for reading entire data from the file in the form lines  and stored in the form list
+
+=>Syntax:-                 varname=filepointer.read()			
+------------------------------------------------------------------------------------
+#FileReadEx4.py
+#This Program reads all the lines  from the file and dispalys the file data on the console-----readlines()
+try:
+	fname=input("Enter File Name for reading its content:")
+	with open(fname,"r") as fp:
+		filedata=fp.readlines()
+		for line in filedata:
+			print(line,end="")
+except FileNotFoundError:
+	print("File does not exists")

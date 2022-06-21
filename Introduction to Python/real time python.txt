@@ -1,0 +1,34 @@
+====================================================================
+		Course :-    PYTHON Programming
+                             +
+		with NUMPY and PANDAS ---->Data Science /AI / ML / DL
+====================================================================
+		Real time Applications of Python Programming
+====================================================================
+1. Web Application Development
+2. Gaming Application Development
+3. Artificial Inteligence and Mchine Learning , Deep Learning , Data Science
+4. Desktop GUI Applications
+5. Image Processing 
+6. Text Processing
+7. Business Applications
+8. Education Programs and Training Programs.
+9. Audio and Video Based Application
+10.Web Scrapping / Web Harvesting Application.
+11. Data Visulization in Data Science
+12. Scientific and Numerical Operation 
+13. Software Development
+14. Operating Development
+15. CAD Based Application
+16. Embedded Application 
+17. Cosole based Applications.
+18. Computer Vision
+19. Language Development
+20. Automation of Testing
+21. Animation applications
+22. Data Analysis and Data Analystics
+23. Development of IOT 
+==================================================================
+
+
+

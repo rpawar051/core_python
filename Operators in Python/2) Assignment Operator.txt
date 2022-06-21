@@ -1,0 +1,51 @@
+		==========================================
+				2) Assignment Operator
+		==========================================
+=> The Symbol of Assignment Operator is = (Single Equal to) .
+=>The purpose of Assignment Operator is that to assign (or) transfer Right Hand Value(RHS) to the Left Hand Side Variable.
+=>We have two Assignment Types. They are
+			a) Single Line Assignment
+			b) Multi Line Assignment
+-------------------------------------------------------------------------------------
+a) Single Line Assignment:-
+---------------------------------------------
+Syntax:-              varname=Value
+				(or)
+			    varname=expression	
+Example:-
+-----------------
+			>>> a=10
+			>>> b=20
+			>>> c=a+b
+			>>> print("Val of c={}".format(c))---------->Val of c=30
+---------------------------------------------
+b) Multi Line Assignment:-
+---------------------------------------------
+Syntax:-	
+			var1,var2.....var-n=val1,val2....val-n
+					(OR)
+			var1,var2,....var-n=expression1,expression2,....expression-n
+			
+----------------------------------------------------------------------------------------------------
+Examples:
+>>> a,b,c=10,20,30
+>>> d=a+b+c
+>>> print("Val of a={}".format(a))---------Val of a=10
+>>> print("Val of b={}".format(b))------Val of b=20
+>>> print("Val of c={}".format(c))-------Val of c=30
+>>> print("Val of d={}".format(d))------Val of d=60
+
+Examples:
+
+>>> a,b=10,20
+>>> c,d,e=a+b,a-b,a*b
+>>> print(c)------------30
+>>> print(d)-------------10
+>>> print(e)---------200
+Examples:
+------------------------
+>>>a,b=10,20
+>>>print(a,b)----------- 10   20
+>>>a,b=b,a
+>>>print(b,a)-----------20    10
+----------------------------------------------------------------------------------------------------------

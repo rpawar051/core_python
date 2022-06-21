@@ -1,0 +1,68 @@
+			=======================================
+				Operations on str Data 
+			=======================================		
+=>A String  is a collection (or) seqence of of charcaters enclosed within single, double quotes , tripple Single and tripple double quotes .
+=>On String data , we can perform two types of Operations. They are
+		a) Indexing
+		b) Slicing
+------------------------------------------------------------------------------------------------------------------
+a) Indexing:
+--------------------------
+Def:-The process of obtaining a value from the given str object by passing Valid Index is		called Indexing.
+
+Syntax:       strobj [ Index ]
+
+=>Here   index represents either +ve index or -ve index of strobj
+=>If we enter Invalid Index then we get IndexError
+
+Examples:
+----------------
+>>> s="PYTHON"
+>>> print(s)-------------PYTHON
+>>> type(s)------------<class 'str'>
+>>> print( s[0])-----------P
+>>> print(s[-1])----------N
+>>> print(s[4])-----------O
+>>> print(s[-4])----------T
+>>> print(s[-3])---------H
+>>> print(s[-5])----------Y
+>>> print(s[5])--------N
+>>> print(s[15])-----------IndexError: string index out of range
+====================================================================
+b) Slicing:
+---------------------
+Def:- The process of obtaining the range of values / some part of of str object by passing valid Indices is called String Slicing.
+
+Syntax1:-      strobj[ start : stop] 
+
+=>This syntax obtains range of values from start to stop-1 indices in forward direction             provided start<stop otherwise we never get any output
+
+Examples:
+-----------------
+>>> s="PYTHON"
+>>> print(s[0:3])--------------PYT
+>>> print(s[-6:-3])------------PYT
+>>> print(s[3:0])  ----------  no output , bcoz 3 < 0 is false
+
+>>> print(s[-3:-6])-------   no output , bcoz -3 < -6 is false
+
+>>> print(s[2:5])--------THO
+>>> print(s[0:4])------PYTH
+>>> print(s[-6:-2])-------PYTH
+>>> print(s[2:4])-------TH
+>>> print(s[0:3])------PYT
+>>> print(s[-6:-3])-------PYT
+>>> print(s[2:6])----------THON
+---------------------------------------------------------------------------------------------------------------
+Syntax2:-
+--------------		strobj[start:stop:step]	
+
+=>=>This syntax obtains range of values from start to stop-1 indices in forward direction             with specfied step value (Interval val) provided start<stop otherwise we never get any		output (	THIS CASE IS IN STEP VALUE IN FORWARD DIRECTION )
+
+>>> s="PYTHON"
+>>> print(s[0:6:2])------------PTO
+>>> print(s[1:5:3])----------YO
+>>> print(s[2:6:2])------------TO
+>>> print(s[0:6:4])----------PO
+>>> print(s[-6:-1:2])------PTO
+--------------------------------------------------------------------------------------------------------

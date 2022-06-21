@@ -1,0 +1,47 @@
+		=============================================
+				6) Membership Operators 
+		=============================================
+=>The purpose of membership is that to check the existence of the specified value in the           sequence type  objects(bytes,bytearray,str,range), list type objects ( list, tuple), set type objects (set, frozenset)  and  dict type objects( dict)
+=>We have two types of Membership operators. They are
+
+					a) in 
+					b) not in
+----------------------------------------------------------------------------------------------------
+a) in:
+--------
+=>This operator returns True provided the specified value present in sequence type,list           type , set type  , dict type objects otherwise it returns False.
+
+Note:- Iterable_object contains more numbers of elements
+Examples: sequence type,list  type , set type  , dict type objects are called Iterable_object
+
+Syntax:-   value in Iterable_object
+
+b) not in:
+------------------
+=>This operator returns True provided the specified value not present in sequence type,list           type , set type  , dict type objects otherwise it returns False.
+
+Note:- Iterable_object is one , which contains more numbers of elements
+Examples: sequence type,list  type , set type  , dict type objects are called Iterable_object
+
+Syntax:-   value not in Iterable_object
+
+Examples:
+-----------------
+>>> s="PYTHON"
+>>> print( "P" in s)-----------True
+>>> print( "PY" in s)---------True
+>>> print( "HON" in s)-----------True
+>>> print( "PON" in s)---------False
+>>> print( "p" in s)------------False
+>>> print( "NO" in s)-----------False
+>>> print( "NO" not in s)---------True
+
+Examples:
+>>> lst=[10,20,30,40,50,-20]
+>>> print(lst)------------------[10, 20, 30, 40, 50, -20]
+>>> print( 10 in lst)------------True
+>>> print(100 not in lst)----------True
+>>> print(-20 not in lst)-----------False
+>>> print(lst[0] in lst)-----------True
+>>> print(lst[0:3] in lst)------------False
+==============================================================
