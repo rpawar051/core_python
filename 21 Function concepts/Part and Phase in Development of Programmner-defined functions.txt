@@ -1,0 +1,17 @@
+		==============================================
+		     Part and Phase in Development of Programmner-defined functions
+		==============================================
+=>The reason for developing Programmner-defined functions is that to perform some operation  and provided re-usability.
+=>While we are defining the programmer-defined functions, we must ensure that there must exists 2 parts.
+			a) Function Definition
+			b) Function Calls
+=>A perticular Function Definition exists Only Once and for one function definition we can have multiple function calls.
+=>"For Every Function Call, there must exists a Function Definition otherwise we get Error"
+=>Function Definition will execute provided when we call otherwise function definition will not execute.
+
+=>We know that functions are meant for performing Operations and code-re-usability and it can do  the following
+			a) Taking INPUT
+			d) PROCESSING the input
+			c) Giving the OUTPUT
+here (a),(b) and (c) are phases in Functions.
+==================================X============================

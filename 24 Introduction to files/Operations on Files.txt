@@ -1,0 +1,32 @@
+			=========================================
+					Operations on Files
+			=========================================
+=>On the Operations of files, we can perform two types of operations. They are
+		a) Write Operation
+		b) Read Operation
+-------------------------------------------------------------------------------------------------
+a) Write Operation:
+-----------------------------
+=>The purpose of write operation is that "To Transfer Temporary data of main memory (RAM) into the file of secondary memory (HDD) "
+=>Steps for Performing write operation:
+----------------------------------------------------------
+	a) Choose the file name
+	b) Open the file name in write mode
+	c) Perform Cycle of write Operations.
+=>While we are performing write operations, we get 2 exceptions. They are
+		a) FileExistsError
+		b)IOError
+--------------------------------------------------------------------------------------------------
+b) Read Operation:
+-----------------------------
+=>The purpose of read operation is that "To transfer the data of file of Secondary memory into the object of main memory"
+-----------------------------------------------------------
+=>Steps for Performing Read Operation:
+-----------------------------------------------------------
+	a) Choose the file name
+	b) Open the file name in Read mode
+	c) Perform Cycle of Read Operations.
+=>While we are performing read operations, we get 1 exceptions.
+		a) FileNotFoundError
+=====================================X======================================
+

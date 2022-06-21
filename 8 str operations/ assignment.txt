@@ -1,0 +1,22 @@
+Assigment
+-----------------------
+Cosider the following statement
+------------------------------------------------
+		sub="PYTHON  IS  AN  OOP  LANG"
+
+Display::(Indexing)
+--------------
+1) obtain and display    O in various place by +ve and -ve indexing
+2) obtain and display    N in various place by +ve and -ve indexing
+3) obtain and display    P in various place by +ve and -ve indexing
+4) obtain and display    space  in various place by +ve and -ve indexing
+5) obtain and display    s  by +ve and -ve indexing
+-------------------
+Display::(Slicing)--Forward direction )
+--------------
+1)obtain and print   "PYTHON"
+2) obtain and print   "OOP"
+3) obtain and print   "LANG"
+4) obtain and print   "AN"
+5) obtain and print   "PTO S N O P L N "
+6) obtain and print   "HON IS AN OOP"

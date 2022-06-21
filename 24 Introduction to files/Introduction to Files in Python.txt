@@ -1,0 +1,27 @@
+		================================================
+				Introduction to Files in Python
+		================================================
+=>The purpose of files in any programming language is that "To store the data (or) information                   Permanently "
+=>In otherwords files concept is used for obtaining Persistency ( Storing the data permanently)
+=>In the context of files, We can write two types of applications. They are
+			a) Non-Persistant Applications
+			b) Persistant Applications
+
+=>In Non-Persistant Applications Development, we read the data from key board, processed in main memory and results are displayed in main memory.
+=>The Data (or) results(or) Information stored in main memory (RAM) is temporary.
+=>Examples:-  all our previous programs are comes under Non-persistant applications.
+
+=>In Persistant Applications Development, we read the data from key board, processed in main memory and results are stored permanently .
+=>In Industry, To store the data permanently, we have two approaches. They are
+		a) By Using Files
+		b) By using Data Base Software (Oracle, MySQL)
+------------------------------------------------------------------------------------------------------------------------------
+Definition of File:
+----------------------------
+=>A file is a collection of records
+=>Programatically, The object data of main memory becomes a  Record in the file of Secondary memory and The record of file of secondary  memory  becomes an object in main memory.
+------------------------------------
+=>Definition of Stream:
+-------------------------------------
+=>The flow of data between the object of main memory (RAM) and file of secondary memory(HDD) is called Stream.
+=========================================X=====================================

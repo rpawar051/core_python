@@ -1,0 +1,26 @@
+			==============================
+   				            break
+			==============================
+=>'break' statement is used to bring the control of PVM out of loop execution when certain condition is satisfied / triggered.
+=>'break' statement to be written inside of loop body after the condition.
+
+Syntax1:         while ( Test Cond):
+                               --------------------
+			       --------------------
+			       if ( Other Test Cond):
+			               break
+				------------------------
+				------------------------
+			-------------------------------
+			-------------------------------
+
+Syntax2:         for varname in Iterbale_object
+                               --------------------
+			       --------------------
+			       if ( Test Cond):
+			               break
+				------------------------
+				------------------------
+			-------------------------------
+			-------------------------------
+				

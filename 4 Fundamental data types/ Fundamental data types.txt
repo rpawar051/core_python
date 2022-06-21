@@ -1,0 +1,85 @@
+			===================================
+				Fundamental Data Types 
+			===================================
+=>The purpose of Fundamental Data Types  is that to store Single Value only.
+=>Fundamental Data Types  are classfied into 4 types. They are
+		
+		1) int
+		2) float
+		3) bool
+		4) complex
+-------------------------------------------------------------------------------------------------------------------
+1) int :
+-----------
+=>'int' is one of the pre-defined class <class,'int'> and it is treated as data type.
+=>The purpose of 'int' data type is that to store Integer Data (Or) Integral Values (or) whole       numbers ( Values without decimal places )
+     Example:-   stno   empno    htno   adcno...etc
+-----------------------------------------------------------------------------------
+Example:					Output
+-----------------			-----------------------
+>>> a=100
+>>> print(a)----------------------------------100
+>>> type(a)------------------------------<class 'int'>
+>>> b=123
+>>> print(b)------------------------------123
+>>> type(b)--------------------------<class 'int'>
+>>>print( type(a), type(b) )-------<class 'int'> <class 'int'>
+--------------------------------------------------------------------------------------------------------
+=>with 'int' data type, we can also store Binary , Octal and Hexa Decimal data also.
+=>In other words, we have 4 types Number Systems which are fully supported in Python Language.They are
+		
+		1. Decimal Number System (default number)
+		   ----------------------------------------------------------------------
+		   =>Digits---->0,1,2,3,4,5,6,7,8,9  (or (0-9)
+		   =>Base--->10
+		----------------------------------------------------------------------
+		2. Binary Number System 
+		  ----------------------------------------------------------------------
+		   =>Digits---> 0, 1
+		   =>Base ---> 2
+		  ----------------------------------------------------------------------
+		3. Octal Number System 
+		----------------------------------------------------------------------
+		=>Digits-->0,1,2,3,4,5,6,7
+		=>Base---> 8
+		----------------------------------------------------------------------
+		4. Hexa Decimal Number System
+		----------------------------------------------------------------------
+		=>Digits---> 0,1,2,3,4,5,6,7,8,9  
+				    A(10)  B(11)   C(12)   D(13)   E(14)     F(15) 
+		=>Base--- 16		    
+		----------------------------------------------------------------------
+
+=>Storing Binary Literals in Python with int  data type:
+============================================
+=>To store the binary literals / values in python environment, The binary values must be preceded with 0b  (or) 0B
+
+=>Syntax:
+			varname=0b binary data
+				(OR)
+			varname=0B binary Data
+
+Example:
+---------------
+>>> a=111
+>>> print(a)----------------------111
+>>> a=0b111
+>>> print(a)--------------------7
+>>> print(type(a))-----------------<class 'int'>
+>>> b=0B1111
+>>> print(b)---------------------15
+>>> print(type(b))------------------<class 'int'>
+>>> a=0b10104--------------SyntaxError: invalid digit '4' in binary literal
+--------------------------------------------------------------------------------------------------------------------
+=>Storing Octal Literals in Python with int  data type:
+============================================
+=>To store the Octal literals / values in python environment, The Octal values must be preceded with 0o   (or)   0O
+
+=>Syntax:
+			varname=0o Octal data
+				(OR)
+			varname=0O Octal Data
+
+-------------------
+Examples:
+-------------------

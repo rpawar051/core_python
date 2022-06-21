@@ -1,0 +1,21 @@
+		===============================================
+			Keyword Arguments (or) Parameters
+		===============================================
+=>In some of the circumstances, we know the function name and  we may not be knowing the order of the formal Parameters and to pass the data accurately, we must use the concept of Keyword arguments / Parameters.
+
+=>In This Concept, Programatically, Formal Parameter Names will be treated as keywords and values in the functional call in any order and they must written after Possitional Params.
+=>When we use Possitional Arguments and Keyword Arguments in a same function call then first we must use Possitional Arguments and later we use Keyword Arguments otherwise we get Error.
+-----------------------------------------------
+Syntax for function Definition..
+-----------------------------------------------
+	def   functionname(param1, param2...param-n):
+	           --------------------------------------------------------
+		   --------------------------------------------------------
+
+-----------------------------------------------
+Syntax for function Call..
+-----------------------------------------------
+	functionname(param-n=val-n, param1=Value1....param-n-1=value-n-1)
+
+
+=>Here param-n=value-n, param1=value1.....param-n-1 = value-n-1 are called Key word Parameters.

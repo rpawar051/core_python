@@ -1,0 +1,57 @@
+		==========================================
+						set
+		==========================================
+=>'set' is a pre-defined class and it is treated as data type.
+=>The purpose of  set data type is that  To Store Multiple Values either of Same Type or	            Different Type or both types with Unique Values "
+=>An object of set does not allow duplicate elements.
+=>An object of  set  does not maintains Insertion order (or) does not Preserves Insertion Order bocz set elements can be displayed in any of possibilities.
+=>The elements of  set must be written (or) reprsented within curly braces { } and  the elements	must be separated by comma 
+
+		Syntax:-     varname={ val1,val2...val-n }
+=>On the object of set, we can't perform both indexing and slicing operations bcoz set object does not maintains Insertion order.
+=>=>To convert one Possible type of value into set type value , we use set().
+=>We have two types of set objects. They are 
+			a) empty set
+			b) non-empty set
+=>An empty set does not contain any elements and length is 0
+		Syntax:-      varname=set()                   (  varname={} is INVALID )
+
+=>An object of set belongs to both immutable( 'set' object does not support item assignment) and Mutable( add()....etc)
+---------------------------------------------------------------------------------------------------------------------
+Examples:
+--------------------
+>>> s1={10,20,10,10,10,20,30,40,40}
+>>> print(type(s1))----------------<class 'set'>
+>>> print(s1)---------{40, 10, 20, 30}
+>>> s2={10,"Rossum",34.56,"python",True}
+>>> print(s2)----------{'python', True, 34.56, 10, 'Rossum'}
+>>> print(type(s2))--------<class 'set'>
+>>> s3={}
+>>> print(type(s3))-----<class 'dict'>
+>>> s3=set()
+>>> print(type(s3))   --------<class 'set'>
+>>> print(s3)  -------set()
+>>> s4={10,10,10,10}
+>>> print(s4, type(s4))------------{10} <class 'set'>
+>>> len(s4)------------1
+>>> t1=(10,20,30,40,10)
+>>> print(t1,type(t1))----------(10, 20, 30, 40, 10) <class 'tuple'>
+>>> s1=set(t1)
+>>> print(s1,type(s1))---------{40, 10, 20, 30} <class 'set'>
+>>> s2=set()
+>>> print(s2,type(s2))----set() <class 'set'>
+>>> s2={10,"Rossum",34.56,"python",True}
+>>> print(s2, type(s2))----{'python', True, 34.56, 10, 'Rossum'} <class 'set'>
+>>> print(id(s2))--------1813967522272
+>>> s2[0]="Java"-----TypeError: 'set' object does not support item assignment
+>>> s2.add("KVR")
+>>> print(s2, type(s2))--------{'python', True, 34.56, 'KVR', 10, 'Rossum'} <class 'set'>
+>>> print(id(s2))-----1813967522272
+---------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

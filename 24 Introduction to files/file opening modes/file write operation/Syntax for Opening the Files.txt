@@ -1,0 +1,38 @@
+		==============================================
+				Syntax for Opening the Files
+		==============================================
+=>To Open the file with help of file opening modes, we have 2 syntaxes. They are
+		1) open()
+		2) with     open ()    as 
+---------------------------------------------------------------------------------------------------------------------
+1) open():
+ ---------------
+=>Syntax:             varname=open("FileName", "File Opening Mode")
+--------------------
+Explanation:
+-------------------
+1) varname is one of the valid python variable and it is treated as File Pointer (object) and whose type TextIOWrapper.
+2) open() is one of the pre-defined function and it used for opening the file in the specified  mode.
+3) "File Name" is nothing name of the file
+4) "File Opening Mode" represents any file opening mode i.e   r,w,a,r+,w+,a+,x 
+
+5) Once we open the file with open(), It is mandatory to close the file by calling close()   explicitly
+==========================================X========================
+2) with     open ()    as :
+------------------------------------
+=>Syntax:
+   ------------
+   	with  open("file name","file mode") as <file pointer>:
+	           --------------------------------------------
+		   --------------------------------------------
+		   Block of statements--file related Operation
+		   --------------------------------------------
+		   --------------------------------------------
+Explanation:
+--------------------
+=>'with' 'as' are the key words
+=>open() is pre-defined used to open a file name
+=>The advantage of this syntax is that to open a file as well as to close the file automatically after file operations completed and once PVM comes out of "with..open() as"  Indentation
+
+Note:- Industry is always recommeded to open the file in any mode by using                     Syntax-2 bcoz we have auto-file close facility but not recommended to                    open the file in any mode by using Syntax-1.
+===============================X===============================

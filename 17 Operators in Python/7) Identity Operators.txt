@@ -1,0 +1,204 @@
+		=========================================
+				7) Identity Operators
+		=========================================
+=>These Operators are used for comparing the memory addresses (id's) of two or more           variable( object).
+=>In python Programming, we have two types of identity Operators. They are
+		a) is
+		b) is not
+a) is :
+--------
+=>The Operator 'is' returns True provided both the objects contains same address                    otherwise it returns False.
+
+Syntax:-                  var1  is  var2
+
+b) is not :
+----------------
+=>The Operator 'is not' returns True provided both the objects contains different  address                    otherwise it returns False.
+
+Syntax:-                  var1  is not  var2
+
+------------------------------------------------------------------
+>>> d1={10:"Apple",20:"Mango"}
+>>> d2={10:"Apple",20:"Mango"}
+>>> d3={10:"Apple",20:"Kiwi"}
+>>> print(d1, id(d1))-----------{10: 'Apple', 20: 'Mango'} 2675474330880
+>>> print(d2, id(d2))-----------{10: 'Apple', 20: 'Mango'} 2675474330688
+>>> print(d3, id(d3))----------{10: 'Apple', 20: 'Kiwi'} 2675474331264
+>>> print(d1 is d2)------------False
+>>> print(d1 is not  d2)-------True
+>>> print(d1 is d3)----------False
+>>> print(d1 is not  d3)-------True
+--------------------------------------------------------------------------------------
+Examples:
+>>> s1={10,20,30,40}
+>>> s2={10,20,30,40}
+>>> fs1=frozenset(s1)
+>>> fs2=frozenset(s2)
+>>> print(s1, id(s1))-------------{40, 10, 20, 30} 2458505290912
+>>> print(s2, id(s2))-----------{40, 10, 20, 30} 2458508511264
+>>> print(s1 is not s2)----------True
+>>> print(s1 is s2)--------------False
+>>> print(fs1, id(fs1))-------------------frozenset({40, 10, 20, 30}) 2458508512608
+>>> print(fs2, id(fs2))--------frozenset({40, 10, 20, 30}) 2458508513056
+>>> print(fs1 is fs2)---------False
+>>> print(fs1 is not  fs2)------True
+--------------------------------------------------------------------------------------------------
+Examples:
+>>> ls1=[10,20,"abc"]
+>>> ls2=[10,20,"abc"]
+>>> tp1=tuple(ls1)
+>>> tp2=tuple(ls2)
+>>> print(ls1, id(ls1))--------[10, 20, 'abc'] 2458505018560
+>>> print(ls2, id(ls2))--------[10, 20, 'abc'] 2458508530048
+>>> print(ls1 is ls2)----------False
+>>> print(ls1 is not ls2)------True
+>>> print(tp1, id(tp1))---------(10, 20, 'abc') 2458508486848
+>>> print(tp2, id(tp2))---------(10, 20, 'abc') 2458508551360
+>>> print(tp1 is tp2)-----False
+>>> print(tp1 is not tp2)-------True
+----------------------------------------------------------------------------------------------------
+Examples( str)
+--------------------------
+Note:-In the str data type , if two str objects contains same data with same meaning and case the those objects contains same address otherwise they contains different address.
+
+>>> s1="KVR"
+>>> s2="KVR"
+>>> print(s1,id(s1))-------------KVR 2458508551984
+>>> print(s2,id(s2))------------KVR 2458508551984
+>>> s3="KVr"
+>>> print(s3,id(s3))----------KVr 2458508552048
+>>> print(s1 is s2)-----------True
+>>> print(s1 is not  s2)-----------False
+>>> print(s1 is not  s3)----------True
+>>> print(s1 is s3)-------------False
+
+ range(----)
+-----------------
+>>> r1=range(1,10)
+>>> r2=range(1,10)
+>>> print(r1,id(r1))--------------range(1, 10) 2458504802192
+>>> print(r2,id(r2))------------range(1, 10) 2458504897856
+>>> print(r1 is r2)-----------False
+>>> print(r1 is not r2)---------True
+>>> l1=[10,20,30,40]
+----------------------------------
+bytes
+-------------------
+>>> b1=bytes(l1)
+>>> b2=bytes(l1)
+>>> print(b1,id(b1))------------b'\n\x14\x1e(' 2458504897184
+>>> print(b2,id(b2))--------------b'\n\x14\x1e(' 2458504897904
+>>> print(b1 is b2)------------False
+>>> print(b1 is not  b2)--------True
+
+bytearray
+--------------------
+>>> l1=[10,20,30,40]
+>>> l2=[10,20,30,40]
+>>> ba1=bytearray(l1)
+>>> ba2=bytearray(l1)
+>>> print(ba1,id(ba1))--------------bytearray(b'\n\x14\x1e(') 2458508552688
+>>> print(ba2,id(ba2))-------------bytearray(b'\n\x14\x1e(') 2458508552944
+>>> print(ba1 is ba2)-------False
+>>> print(ba1 is not  ba2)-------True
+--------------------------------------------------------------------------------------------------
+Examples: (Complex)
+>>> a=2+3j
+>>> b=2+3j
+>>> print(a, id(a))-------------(2+3j) 2458505095280
+>>> print(b, id(b))-------------(2+3j) 2458508407952
+>>> print(a is b)----------False
+>>> print(a is not  b)----------True
+Examples: (bool)
+>>> a=True
+>>> b=True
+>>> print(a, id(a))-----------True 140705676449896
+>>> print(b, id(b))----------True 140705676449896
+>>> c=False
+>>> print(c, id(c))---------False 140705676449928
+>>> d=False
+>>> print(d, id(d))-----------False 140705676449928
+>>> print(a is b)------------True
+>>> print(c is d)----------True
+>>> print(a is not  b)-----------False
+>>> print(c is not  d)--------False
+>>> print(a is not  c)------True
+>>> print(c is not  d)------False
+Examples(float)
+>>> a=12.34
+>>> b=12.34
+>>> print(a, id(a))-------------12.34 2458508408368
+>>> print(b, id(b))------------12.34 2458505096176
+>>> print(a is b)---------False
+>>> print(a is not b)--------------True
+>>> c=12.99
+>>> print(c, id(c))----------12.99 2458505095280
+>>> print(a is not c)------------True
+>>> print(a is  c)------------False
+=============================================================
+Examples(int)
+NOTE:- WHEN WE STORE 0 TO 256 IN OBJECTS OF INT TYPE THEN THEY CONTAINS SAME ADDRESS OTHERWISE DIFFERENT ADDRESS.
+>>> a=10
+>>> b=10
+>>> print(a, id(a))-------------10 2458498984528
+>>> print(b, id(b))------------10 2458498984528
+>>> print(a is b)---------True
+>>> print(a is not  b)-----------False
+>>> a=256
+>>> b=256
+>>> print(a, id(a))-------------256 2458499180944
+>>> print(b, id(b))------------256 2458499180944
+>>> print(a is b)---------------True
+>>> print(a is not  b)---------------False
+>>> a=257
+>>> b=257
+>>> print(a, id(a))--------------257 2458508407888
+>>> print(b, id(b))--------------257 2458508407952
+>>> print(a is b)-------------False
+>>> print(a is not  b)-----------True
+>>> a=1000
+>>> b=1000
+>>> print(a, id(a))------------1000 2458508408016
+>>> print(b, id(b))---------1000 2458508407984
+>>> print(a is b)-----------False
+NOTE:- WHEN WE STORE -1 TO -5 IN OBJECTS OF INT TYPE THEN THEY CONTAINS SAME ADDRESS OTHERWISE DIFFERENT ADDRESS.
+>>> a=-1
+>>> b=-1
+>>> print(a, id(a))-------        -1    2458498984176
+>>> print(b, id(b))---------     -1 2458498984176
+>>> print(a is b)---------True
+>>> a=-5
+>>> b=-5
+>>> print(a, id(a))-------      -5    2458498984048
+>>> print(b, id(b))--------    -5    2458498984048
+>>> a=-6
+>>> b=-6
+>>> print(a, id(a))--------    -6    2458505095792
+>>> print(b, id(b))--------    -6    2458508408016
+
+NOTE:- WHEN WE ASSIGN  SAME   VALUES(+VE  AND -VE) OF ANY FUNDAMENTAL DATA TYPE  IN MULTIPLE OBJECTS WITH MULTI LINE ASSIGNMENT STATEMENT THEN THOSE OBJECTS CONATINS SAME ADDRESS(BCOZ IT APPLIES DEEP COPY).
+
+>>> a,b=257,257
+>>> print(a, id(a))---------257 2458508408176
+>>> print(b, id(b))--------257 2458508408176
+>>> print(a is b)---------True
+>>> print(a is not  b)--------False
+>>> a,b=-102,-102
+>>> print(a, id(a))------    -102 2458505095792
+>>> print(b, id(b))---      -102 2458505095792
+>>> print(a is b)--------   True
+>>> print(a is not  b)----  False
+>>> a,b=-6, 10
+>>> print(a, id(a))----------    -6 2458508407952
+>>> print(b, id(b))--------     10 2458498984528
+>>> a,b=12.34,12.34
+>>> print(a, id(a))-----------   12.34 2458508408368
+>>> print(b, id(b))----------   12.34 2458508408368
+
+>>> a,b=[10,"KVR"],[10,"KVR"]
+>>> print(a, id(a), type(a))-----------[10, 'KVR'] 2458508551552 <class 'list'>
+>>> print(b, id(b), type(b))--------[10, 'KVR'] 2458508530432 <class 'list'>
+
+>>> print(a is b)-----------False
+>>> print(a is not  b)---------True
+------------------------------------------------------------------------------------------------------------------

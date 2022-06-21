@@ -1,0 +1,71 @@
+			=================================	
+			     Importance of Identifers / Variables
+			=================================
+=>We know that all the literals (Values) are stored in main memory. To process the data / values / literals, we must give distinct names to the created memory space where the values are stored. These distict names identify the values and hence distinct names are also called "IDENTIFIERS". 
+=>Identifier  Values can be changed / Varying during exection of the Program and Hence Identifiers are also called Variables.
+
+=>Def. of Variable:
+-----------------------------
+=>A Variable is an identifer , whose value is chnaging / Varying during exection of the Program.
+=>All the inputs / Values / Literals must be stored in the form of Variables.
+=>Hence All the Variables are always treated as OBJECTS(  bcoz behind of the variables we have data types and they are CLASSES )
+--------------------------------------------------------------------------------------------------------------------------------
+Rules for Using Identifers / Variables in Python Program
+--------------------------------------------------------------------------------------------
+=>To Use  Identifers / Variables in Python Program, we must follow the following Rules
+
+1) The Variable Name is a combination of Alphabets (A-Z,a-z), digits(0-9) and a special	           symbol  Under Score ( _ )
+
+2)  The First Letter of the variable Name must starts with either an Alphabet or with an               Under Score ( _ )
+
+				Examples:-
+						1sal=23----------Invalid
+						#sal=23.4-------Invalid
+						$name="python"-----invalid
+						sal1=23.45-----valid
+						_sal=2.5-----Valid
+						_1=23------Valid
+						_$=3.4------Invalid
+						__="python---valid
+
+3) Within the variable name , No special Symbols are allowed except Under score ( _ ) 
+
+			Example:-
+					emp   sal=34.56-----Invalid
+					emp&sal=1.2---------Inavlid
+					emp_sal=34.56----valid
+					emp-sal=1.2-------invalid
+
+4) Key words can't be taken as Variable Names (Key words are the reserved words and they some specific meaning in the language and we can't change)
+		Example:
+		-----------------
+			   int=123----------valid
+			   
+			   while=23.45------invalid, bcoz 'while' is kwd
+			   if=12.34------------invalid, bcoz 'if' is kwd
+
+			   _while=23.45------Valid
+			   while_=23.45----valid
+			   while1=12--------valid
+			   1while==13-------invalid
+
+5) Python Programming Is one of the Case Sensitive Language.
+
+		Examples:-     
+					AGE=123--------Valid
+					age=18-----------valid
+					Age=44----------valid
+					aGe=11----------valid
+					agE=99---------valid
+					AGe=88-------- valid
+
+	Note- here all the variable names sounds and meaning same  but whose valuesd are different bcoz they case sensitive
+
+Note:- It is always recommended to the python Programmers to take user frindly variable		    Names.
+
+Example:		 ibm  emp  sal=123-----invalid
+		         ibm_emp$sal=123---invalid
+		         ibm_emp_sal=345--valid
+				
+
+

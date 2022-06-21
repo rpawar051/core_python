@@ -1,0 +1,16 @@
+================================================
+			Limitations of Files
+================================================
+=>When we use the concept of files for achieving the data persistency, we get the following limitations. 
+
+a)Files are Un-secured bcoz Files concept is unable to provide user names and passwords
+
+b) Files concept unable to store large volume of Data
+
+c) The archtecture of Files is OS dependent.
+
+d) Processing the data of files is complex bcoz Files concept is unable provide Column      
+   Names for the records.
+
+Hence To overcome these problems, we use the concept of Data Base software for achieving the Data Persistency.
+============================X====================================

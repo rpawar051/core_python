@@ -1,0 +1,26 @@
+		============================================
+				None data type
+		============================================
+=>'NoneType' is one of pre-defined class  and treated as data type
+=>None is the value of  <class,'NoneType'>
+=>None is used to define a null value like other languages .
+=>None is not same as  empty, null , zero , nothing 
+=>Once we assign, None to a Variable, existing memory space of a Variable is automatically collected By Garbage Collector  (Most Important)
+-----------------------
+Examples:
+-----------------------
+
+>>> a=None
+>>> print(a, type(a))
+None <class 'NoneType'>
+
+
+>>> a=123
+>>> print(a,type(a))------------123 <class 'int'>
+>>> a=None
+>>> print(a,type(a))------------None <class 'NoneType'>
+>>> print(a,id(a),type(a))-----None  140705636392152   <class 'NoneType'>
+>>> l1=[10,"KVR",34.56]
+>>> print(l1)-----------[10, 'KVR', 34.56]
+>>> l1=None
+>>> print(l1)-------------None

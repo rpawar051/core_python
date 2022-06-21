@@ -1,0 +1,91 @@
+		=================================================
+					dict
+		================================================
+=>'dict' is one of the pre-defined class and treated as data type
+=>The  purpose of dict data type is that to organize / store the data in the form of                      (Key,Value)
+=>In (Key,Value), value of Key is Unique and the value of Value may or may not be unique       (values can have duplicates)
+=>The elements of dict can be written within curly brace in the form of key:value form.
+
+	Syntax:-    dictobj={ key1:value1 , key2:value2, ......key-n:value-n }
+
+=>an object of dict maintains insertion order.
+=>An object of  dict is mutable  and in-details, value of key is immutable and value of value is mutable
+=>On the object of dict , we can't perform indexing and slicing operations.
+=>We can create two types of dict objects. They are
+		a) empty dict
+		b) non-empty dict
+
+a) empty dict:
+----------------------
+=>An empty dict object does not contain any elements and whose length is 0
+
+=>Syntax:-             dictobj={}
+
+=>Syntax for adding the elements to empty dict obj:
+-----------------------------------------------------------------------------------
+			dictobj[ key-1 ]=value1
+			dictobj[ key-2 ]=value2
+			---------------------------------
+			dictobj[ key-n ]=value-n
+here key1,key2...key-n represents set of values of Key and they are unique.
+        value1,value2....value-n represents set of values of Value and they may or may not be unique.
+Example:
+--------------
+>>>d3={}
+>>> print(type(d3))-----------<class 'dict'>
+>>> print(d3)--------{}
+>>> d3[10]="Apple"
+>>> d3[20]="Kiwi"
+>>> d3[30]="mango"
+>>> d3[40]="sberry"
+>>> print(d3, type(d3))---{10: 'Apple', 20: 'Kiwi', 30: 'mango', 40: 'sberry'}   <class 'dict'>
+>>> d3[10]="Guava"
+>>> print(d3)----------{10: 'Guava', 20: 'Kiwi', 30: 'mango', 40: 'sberry'}
+------------------------------------------------------------------------------------------------
+b) non-empty dict:
+----------------------
+=>An non-empty dict object contains  elements and whose length is>0
+
+=>Syntax:-             dictobj={ key1:value1 , key2:value2, ......key-n:value-n }
+
+Examples:
+>>> d1={10:"sagar",11:"sagar",12:"dipalee",13:"ramu"}
+>>> print(type(d1))-------------<class 'dict'>
+>>> print(d1)----------{10: 'sagar', 11: 'sagar', 12: 'dipalee', 13: 'ramu'}
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(type(d2))------------<class 'dict'>
+>>> print(d2)------------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> d2['RS']=333
+>>> print(d2)-----------{'RS': 333, 'JG': 133, 'DR': 144}
+>>> d2['rs']=444
+>>> print(d2)------------{'RS': 333, 'JG': 133, 'DR': 144, 'rs': 444}
+---------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+	stno          name
+	 10             Sagar
+	 11             Sagar
+	 12             dipalee
+	 13             Ramu
+	 ---             ---------
+
+
+	 acno(key)   cname(value
+	 111             xyz
+	 112             pqr
+	 113             abc
+	 114             xyz
+	 ----------------------
+	 ----------------------
+
+
+

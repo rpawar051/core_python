@@ -1,0 +1,25 @@
+		============================================
+				1) Arithmetic Operators 
+		============================================
+=>Arithmetic Operators are used performing Arithmetic Operations such as addition,                substraction, multiplication...etc
+=>If two or more Variables connected with Arithmetic Operators then it is called Arithmetic      Expression.
+=>We have 7 Arithmetic Operators and they shown in the following Table:
+========================================================================
+Slno		Symbol			Meaning			Example    a=10,b=3
+========================================================================
+ 1.		+				Addition			c=a+b---------> 13
+
+ 2.		-				substraction		c=a-b---------->7
+
+ 3.		*				Multiplication		c=a*b---------->30
+-------------------------------------------------------------------------------------------------------------------
+ 4.		/				Division			c= a/b-------->3.3333333333333335
+					 (Float Quotient )
+
+ 5.		//			   Floor Division		c= a//b-------->3
+					( Integer Quotient )
+
+ 6.		%			    Modulo Division		c=a%b------->1
+					      ( Remainder )
+
+ 7.		**			   Exponentation             c=a**b------->1000

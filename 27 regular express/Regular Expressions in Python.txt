@@ -1,0 +1,21 @@
+		====================================================
+				Regular Expressions in Python
+		====================================================
+=>Regular Expressions is one of the Programming language Independent Concept.
+=>To deal with Regular Expresions Programming in Python, we use a pre-defined module       called "re".	
+   -------------------------------------------
+=>Def. of Regular Expression:
+   -------------------------------------------
+   =>Regular Expression is one of the Search Pattern( combination of alphabets,digits and special symbols ) which is used 
+   to search / find / match in the given data and obtains the desired Result.
+
+Applications of Regular Expressions:
+-----------------------------------------------------------
+=>OS development
+=>Compiler and Interpreters development.
+=>Protocals Development
+=>Electronic Circuits
+=>Project Based applications.....etc
+================================X====================================
+
+   

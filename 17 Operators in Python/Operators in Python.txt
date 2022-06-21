@@ -1,0 +1,22 @@
+	============================================
+			Operators in Python
+	============================================
+=>Operator is a symbol. 
+=>The purpose of Operators is that to perform certain Operations
+=>If two or more Variables connected with  operator(s) then it is called Expression.
+=>In Python Programming, we have 7 Operators. They are
+
+			1) Arithmetic Operators  
+			2) Assignment Operator
+			3) Relational Operators
+			4) Logical Operators
+			5) Bitwise Operators ( Most Important )
+			6) Membership Operators 
+					i) in
+					ii) not in
+			7) Identity Operators
+					i) is
+					ii) is not
+
+Note:-  In Python, we don't have  ++  and - -  (Pre and Post  Increment / Decrement )
+Note:-  In Python, we don't have Conditional Operator Like ? :

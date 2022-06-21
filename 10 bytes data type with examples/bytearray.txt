@@ -1,0 +1,57 @@
+		==============================================
+						bytearray
+		==============================================
+=>'bytearray' is one of pre-defined class and it is treated as Data type.
+=>The purpose of bytearray data type is that to Store Possitive Numerical Integer Values	     Ranges from (0 ,256). i.e 0 to 255 only
+=>To convert one Possible data type type value  into  bytearray data type, we use                       bytearray().
+=>An object of bytearray maintains Insertion Order (or) preserves insertion order (In whichever order, we insert the data in the same order data will be displayed)
+=>An object of bytearray is one the mutable object
+=>On the object of bytearray , we can perform both Indexing and Slicing
+
+
+Note:- The Functionality of bytearray  is exactly similar to bytes data type. But an object of bytearray is mutable where as an object bytes  is immutable.
+-----------------------------------------------------------------------------------------------------------
+Examples:
+----------------------
+>>> l1=[10,0,30,40,50,255]
+>>> print(l1)-----------------[10, 0, 30, 40, 50, 255]
+>>> b=bytes(l1)
+>>> print(type(b), id(b))-----<class 'bytes'> 1378419683168
+>>> ba1=bytearray(l1)
+>>> ba2=bytearray(b)
+>>> print(type(ba1),id(ba1))-----------<class 'bytearray'> 1378423426992
+>>> print(type(ba2),id(ba2))---------<class 'bytearray'> 1378423431472
+>>> for x in ba1:
+...     print(x)
+					...
+					10
+					0
+					30
+					40
+					50
+					255
+>>> for x in ba2:
+...     print(x)
+				...
+				10
+				0
+				30
+				40
+				50
+				255
+>>> print(ba2[0])---------------10
+>>> print(ba2[3])--------40
+>>> ba2[3]=155   # updating the value of bytearray object
+>>> for x in ba2:
+...     print(x)
+					...
+					10
+					0
+					30
+					155
+					50
+					255
+>>> print(type(ba2),id(ba2))-------<class 'bytearray'> 1378423431472
+>>> ba2[1]=256----------------ValueError: byte must be in range(0, 256)
+>>> ba2[1]=-12---------------ValueError: byte must be in range(0, 256)
+---------------------------------------------------------------------------------------------------------------------

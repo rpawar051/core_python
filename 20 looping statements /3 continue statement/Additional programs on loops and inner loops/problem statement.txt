@@ -1,0 +1,13 @@
+-------------------------------
+Problem statement:
+-------------------------------
+a) Accept student number(100-200),name and marks in three subjects such as C(100),CPP(100) and																PYTHON(100)
+b) Calculate Total Marks 
+c) Calculate Percentage of Marks 
+d) Decide the grade:
+	i) Student Grade=FAIL provided student secured less than 40 in atleast one subject.
+	ii) Student Grade="DISTINCTION" provided whose total marks lies within 250 and 300
+	iii) Student Grade="FIRST" provided whose total marks lies within 200 and 249
+	iv) Student Grade="SECOND" provided whose total marks lies within 150 and 199
+	v) Student Grade="THIRD" provided whose total marks lies within  120 and 149 
+e) Display the student marks report.

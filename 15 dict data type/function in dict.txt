@@ -1,0 +1,235 @@
+		===============================================
+				     functions in dict
+		===============================================
+=>on the object of dict, we can perform various operation with  functions present in dict         object.
+
+1) clear()
+  ----------------
+=>this function is used for removing all (key,value) from dict object.
+=>Syntax:       dictobj.clear()
+Examples:
+--------------------
+ >>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)-----------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> len(d2)---------3
+>>> d2.clear()
+>>> print(d2)---------{}
+>>> len(d2)----------0
+------------------------------------------------------------------
+2) copy():                         
+--------------
+=>This function is used for copying the content one dict object into another dict object (performs shallow copy)
+
+Syntax:-        dictobj2=dictobj1.copy()
+------------------
+Examples:
+------------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2,id(d2))--------{'RS': 123, 'JG': 133, 'DR': 144} 2673214230592
+>>> d3=d2.copy()    # shallow copy
+>>> print(d3,id(d3))-----{'RS': 123, 'JG': 133, 'DR': 144} 2673210651904
+>>> d3['KV']=111
+>>> print(d3,id(d3))----------{'RS': 123, 'JG': 133, 'DR': 144, 'KV': 111} 2673210651904
+>>> print(d2,id(d2))------{'RS': 123, 'JG': 133, 'DR': 144} 2673214230592
+
+>>> d4=d2    #deep copy
+>>> print(d2,id(d2))--------{'RS': 123, 'JG': 133, 'DR': 144} 2673214230592
+>>> print(d4,id(d2))-------{'RS': 123, 'JG': 133, 'DR': 144} 2673214230592
+>>> d2['KV']=111
+>>> print(d2,id(d2))--------{'RS': 123, 'JG': 133, 'DR': 144, 'KV': 111} 2673214230592
+>>> print(d4,id(d4))--------{'RS': 123, 'JG': 133, 'DR': 144, 'KV': 111} 2673214230592
+-------------------------------------------------------------------------------------------------------------------
+3) get():
+-----------
+=>This function is used for getting Value of Value by passing value of Key
+=>If the value of key does not exists thne it returns None
+
+Syntax:-        dictobj.get(Key)
+
+Examples:
+-----------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)---------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> print(d2.get("RS"))---------123
+>>> print(d2.get("DR"))--------144
+>>> print(d2.get("JG"))---------133
+>>> print(d2.get("KVR"))---------None
+-----------------------------------------------------------------------------------------------------------
+4) pop():
+---------------
+=>This Function is used for removing an entry from (Key,Value) from dict object
+=>If the key does not exists in dict object then we get KeyError
+=> Syntax:-     pop(key)
+
+Example:
+----------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)----------------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> d2.pop("JG")----------133
+>>> print(d2)--------------{'RS': 123, 'DR': 144}
+>>> d2.pop("DR")----------144
+>>> print(d2)---------{'RS': 123}
+>>> d2.pop("RS")---------123
+>>> print(d2)---------{}
+>>> d2.pop("DR")--------KeyError: 'DR'
+---------------------------------------------------------------------------
+5) popitem():
+---------------------------------------------------------------------------
+=>This Function is used for removing last entry  from dict object
+=>If we call this function on empty dict obj then we get KeyError
+
+Syntax:-     dictobj.popitem()
+
+Examples:
+-----------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)-----------------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> d2.popitem()--------------('DR', 144)
+>>> print(d2)--------------------{'RS': 123, 'JG': 133}
+>>> d2.popitem()---------('JG', 133)
+>>> print(d2)------------{'RS': 123}
+>>> d2.popitem()----------('RS', 123)
+>>> print(d2)----------{}
+>>> d2.popitem()------------KeyError: 'popitem(): dictionary is empty'
+-------------------------------------------------------------------------------------------------------
+6) keys():
+---------------
+=>This function is used for obtaining set of keys from dict object.
+=>Syntax:-        varname=dictobj.keys() , here we preserve keys in varname
+				(or)
+                           dictobj.keys(), here we directly display keys 
+
+Examples:
+----------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)-------------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> d2.keys()------------dict_keys(['RS', 'JG', 'DR'])
+>>> k=d2.keys()
+>>> print(k)-----------dict_keys(['RS', 'JG', 'DR'])
+>>> for  x in k:
+...     print(x)
+				...
+				RS
+				JG
+				DR
+>>> for  x in d2.keys():
+...     print(x)
+				...
+				RS
+				JG
+				DR
+-------------------------------------------------------------------------------------------------------------
+7) values():
+-----------------
+=>This function is used for obtaining set of Values from dict object.
+=>Syntax:-        varname=dictobj.values() , here we preserve values in varname
+				(or)
+                           dictobj.values(), here we directly display values
+
+Examples:
+--------------------
+>>> d2={"RS":123,"JG":133,"DR":144}
+>>> print(d2)---------------{'RS': 123, 'JG': 133, 'DR': 144}
+>>> d2.values()-----------dict_values([123, 133, 144])
+>>> v=d2.values()
+>>> print(v)------------dict_values([123, 133, 144])
+>>> for x in v:
+...     print(x)
+				...
+				123
+				133
+				144
+>>> for x in d2.values():
+...     print(x)
+				...
+				123
+				133
+				144
+----------------------------------------------------------------------------------------------
+8) items():
+-----------------
+=>This function is used for obtaining set of (Key,Value) from dict object.
+
+Syntax:-       varname=dictobj.items(), here we preserve (key,value) in varname
+				(or)
+				dictobj.items() ,     here we directly display (key,value) 
+					
+Examples:
+----------------
+>>> d2={"RS":123,"JG":133,"DR":144,"ST":153,"MS":163}
+>>> print(d2)-------{'RS': 123, 'JG': 133, 'DR': 144, 'ST': 153, 'MS': 163}
+>>> x=d2.items()
+>>> print(x)--------dict_items([('RS', 123), ('JG', 133), ('DR', 144), ('ST', 153), ('MS', 163)])
+>>> d2.items()-----dict_items([('RS', 123), ('JG', 133), ('DR', 144), ('ST', 153), ('MS', 163)])
+>>> for z in x:
+...     print(z)
+...
+			('RS', 123)
+			('JG', 133)
+			('DR', 144)
+			('ST', 153)
+			('MS', 163)
+>>> for z in d2.items():
+...     print(z)
+			...
+			('RS', 123)
+			('JG', 133)
+			('DR', 144)
+			('ST', 153)
+			('MS', 163)
+Special Case:
+----------------------
+>>> d2={"RS":123,"JG":133,"DR":144,"ST":153,"MS":163}
+>>> print(d2)--------------------{'RS': 123, 'JG': 133, 'DR': 144, 'ST': 153, 'MS': 163}
+>>> for k,v in d2.items():
+...     print(k,v)
+				...
+				RS 123
+				JG 133
+				DR 144
+				ST 153
+				MS 163
+>>> for k,v in d2.items():
+...     print(k,"--->",v)
+					...
+					RS ---> 123
+					JG ---> 133
+					DR ---> 144
+					ST ---> 153
+					MS ---> 163
+---------------------------------------------------------------------------------------------------------
+9) update():
+-------------------
+=>This function is used for updating the source dict object with destination dict object           entries.
+Syntax:-       sourcedictobj.update(destdictobj)
+
+
+Example:
+--------------
+>>> d2={"RS":123,"JG":133,"DR":144,"ST":153,"MS":163}
+>>> d1={"Ram":123,"Lax":345}
+>>> print(d2)-----{'RS': 123, 'JG': 133, 'DR': 144, 'ST': 153, 'MS': 163}
+>>> print(d1)------{'Ram': 123, 'Lax': 345}
+>>> d1.update(d2)
+>>> print(d1)-----{'Ram': 123, 'Lax': 345, 'RS': 123, 'JG': 133, 'DR': 144, 'ST': 153, 'MS': 163}
+----------------------------------------------------------------------------------------------------
+Special Case:
+--------------------
+>>> d1={"Ram":123,"Lax":345}
+>>> d2={"RS":123,"JG":133,"Ram":999}
+>>> print(d1)--------------{'Ram': 123, 'Lax': 345}
+>>> print(d2)-------------{'RS': 123, 'JG': 133, 'Ram': 999}
+>>> d1.update(d2)
+>>> print(d1)---------{'Ram': 999, 'Lax': 345, 'RS': 123, 'JG': 133}
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+		
+
+
+
+
+
+

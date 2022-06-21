@@ -1,0 +1,15 @@
+#aopex.py
+#program for demostrating arithmetic Operations
+a=int(input("Enter the value of a:"))
+b=int(input("Enter the value of b:"))
+print("----------------------------------------------------------------")
+print("\tResults of Arithmetic Operators Calculations")                                             
+print("----------------------------------------------------------------")
+print("\t{} + {} = {}".format(a,b,a+b))
+print("\n\t{} - {} = {}".format(a,b,a-b))
+print("\n\t{} * {} = {}".format(a,b,a*b))
+print("\n\t{} / {} = {}".format(a,b,a/b))
+print("\n\t{} // {} = {}".format(a,b,a//b))
+print("\n\t{} % {} = {}".format(a,b,a%b))
+print("\n\t{} ** {} = {}".format(a,b,a**b))
+print("----------------------------------------------------------------")

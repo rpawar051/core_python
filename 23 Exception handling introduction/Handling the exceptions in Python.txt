@@ -1,0 +1,45 @@
+		============================================
+			Handling the exceptions in Python
+		============================================
+=>Handling the exceptions in Python is nothing but converting Technical error messages into user-friendly error messages. To do this process, as part exception handling concept , we have 5 keywods. They are
+
+			1) try
+			2) except 
+			3) else
+			4) finally
+			5) raise
+--------------------------------------------------------------------------------------------------------------------------
+Syntax for handling the exceptions:
+------------------------------------------------------
+
+			try:
+			       -------------------------------------------------------------
+			       Block of Statements generating exceptions
+			       -------------------------------------------------------------
+			except  exception-classname-1:
+				-------------------------------------------------------
+				Block of sttements-generates User-friendly error messages.
+				--------------------------------------------------------
+			except  exception-classname-2:
+				-------------------------------------------------------
+				Block of sttements-generates User-friendly error messages.
+				--------------------------------------------------------
+			----------------------------------
+			----------------------------------
+			except  exception-classname-n:
+				-------------------------------------------------------
+				Block of sttements-generates User-friendly error messages.
+				--------------------------------------------------------
+			else:
+				------------------------------------------------------
+				Block of statements--Generates Result
+				------------------------------------------------------
+			finally:
+				------------------------------------------------------
+				Block of statements--executes compulsorily
+				------------------------------------------------------
+			
+=============================================================================
+
+
+

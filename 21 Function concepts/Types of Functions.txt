@@ -1,0 +1,21 @@
+		================================================
+					Types of Functions
+		================================================
+=>We have two types of Functions. They are
+		a) Pre-defined (or) Built-in Functions
+		b) programmer(or) user (or) custom defined Functions.
+
+a) Pre-defined (or) Built-in Functions:
+   -----------------------------------------------------
+=>These functions are already developed by python language developers and they are available as part of python software and whose role to deal with Universal Purposes
+Examples:-   print(), type(), id(), int(), float(), input()
+                      str(), tuple(), list(), sqrt(), bin(), oct(), hex()...etc
+
+  ------------------------------------------------------
+b) Programmer-defined  Functions:
+   -----------------------------------------------------
+=>These functions are  developed by python language Programmers and they are available    as part of python Project and whose role to "Performing Some Operation and Provides	   Code-Re-usability "
+
+Examples:      desposit(), withdraw(), balenq()
+			fundstransfer(), ....etc
+=======================================================================

@@ -1,0 +1,47 @@
+		===============================================
+				global and local  Variables
+		==============================================
+=>Local  Variables are those which are used inside of function body and whose purpose is to store temporary results. Local Variable values can be used inside of correspoinding function definition but not possible to access in the context of other functions.
+=>Global Variables are those which are used before all the function definitions and whose purpose to store common values for all the functions and they can be accesed in all the function definitions.
+
+=>global keyword:
+-----------------------------
+=>If we want to update the global variable values in the function definitions then the global variables must be refered by using global key word otherwise those variables will be treated as local variables and gives error.
+Syntax:
+-------------
+			var1=val1
+			var2=val2
+			--------------
+			var-n=val-n
+			def  functionname(list of formal params if any):
+			            --------------------------------
+				    --------------------------------
+				    global var1,var2...var-n
+				       #modify the global variable values
+				    ---------------------------------
+				    ---------------------------------
+
+globals():
+-----------------
+When we have global variable name and local variable names  on the same name with different values and if we want to do some operation on global variables values inside the function definition  then we must use globals() [ if we use global keyword for refering global variable names , then python interpreter forgets the local variable names ]
+
+Syntax:-
+------------
+			var1=val1
+			var2=val2
+			................
+			var-n=val-n
+
+			def  functionname():
+			       -------------------------
+			       ------------------------
+			       var1=val11
+			       var2=val22
+			       ----------------
+			       ---------------
+			       var-n=val-nn
+			       --------------------
+			       x1=globals() [ 'var1']
+			       x2=globals() [ 'var2']
+			       ----------------------------
+			       xn=globals()['var-n']

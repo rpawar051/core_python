@@ -1,0 +1,87 @@
+			=============================================
+						b) bytes
+			=============================================
+=>'bytes' is one of pre-defined class and it is treated as Data type.
+=>The purpose of bytes data type is that to Store Possitive Numerical Integer Values	           Ranges from (0 ,256). i.e 0 to 255 only
+=>To convert one Possible data type type value  into  bytes data type, we use bytes().
+=>An object of bytes maintains Insertion Order (or) preserves insertion order (In whichever order, we insert the data in the same order data will be displayed)
+=>An object of bytes is one the immutable object
+=>On the object of bytes , we can perform both Indexing and Slicing
+
+Examples:
+-------------------
+>>> a=[10,30,256,12]
+>>> print(a)---------[10, 30, 256, 12]
+>>> type(a)-----------<class 'list'>
+>>> b=bytes(a)----------ValueError: bytes must be in range(0, 256)
+>>> a=[10,30,255,-12]
+>>> print(a)------------[10, 30, 255, -12]
+>>> type(a)------------<class 'list'>
+>>> b=bytes(a)---------ValueError: bytes must be in range(0, 256)
+>>> a=[10,30,255,12,0]
+>>> type(a)---------------<class 'list'>
+>>> print(a)----------------[10, 30, 255, 12, 0]
+>>> b=bytes(a)
+>>> print(type(b))----------<class 'bytes'>
+>>> print(b)---------     b'\n\x1e\xff\x0c\x00'   # encrypted Format
+>>> for val in b:
+...     print(val)-------------------output
+						10
+						30
+						255
+						12
+						0
+>>> a=(10,"KVR",230)
+>>> print(a)---------------(10, 'KVR', 230)
+>>> type(a)-----------<class 'tuple'>
+>>> b=bytes(a)-----------TypeError: 'str' object cannot be interpreted as an integer
+>>> a=(10,12,230)
+>>> print(a)------------(10, 12, 230)
+>>> type(a)-------------<class 'tuple'>
+>>> b=bytes(a)
+>>> type(b)-------------<class 'bytes'>
+>>> print(b)----------b'\n\x0c\xe6'   # encrypted Format
+>>> for x in b:
+...     print(x)			Output
+				------------------------
+					10
+					12
+					230
+---------------------------------------------------------------------------------------------------------------
+>>> l1=[10,0,30,40,50,255]
+>>> b=bytes(l1)
+>>> for x in b:
+...     print(x)
+...
+				10
+				0
+				30
+				40
+				50
+				255
+>>> print(b[0])---------------------- 10
+>>> print(b[1])-------------------  0
+>>> print(b[3])---------------- 40
+>>> print(id(b))-----------1378419774784
+>>> b[0]=100-----------TypeError: 'bytes' object does not support item assignment
+>>> print(b[2:5])---------b'\x1e(2'
+>>> for x in b[2:5]:
+...     print(x)		output
+				...
+				30
+				40
+				50
+------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+

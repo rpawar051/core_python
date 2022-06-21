@@ -1,0 +1,56 @@
+		===========================================
+				raise keyword
+		===========================================
+=>raise is a keyword which is used for raising (or) hitting (or) generating exception as part of Function       body when certain condition is satisfied.
+
+=>Syntax : 
+				def    functionname(list of formal params if any):
+				        ---------------------------------
+					---------------------------------
+					if(Test Cond):
+					       raise  <exception class name>
+					
+===============================================================================
+	No. of Phases required for development of Programmer (or) Custom-defined Exceptions
+===============================================================================
+=>To develop Programmer (or) Custom-defined Exceptions, we must use 3 phases. They are
+		1. Development of Programmer-defined Exception class
+		2. we develop programmer-defined function and raising an exception(s)---(raise)
+		3. Program for Handling the exceptions (try, except...)
+--------------------------------------------------------------------------------------------------------------------
+1. Development of Programmer-defined Exception class:
+--------------------------------------------------------------------------------------
+#kvr.py------------File Name and it is treated as module name
+			# (1)						(2)
+class KvrDivisionError(Exception):pass #  Developed by Python language Programmers
+
+------------------------------------------------------------------------------------------------------------------------------
+2. we develop programmer-defined function and raising an exception(s)---(raise)
+---------------------------------------------------------------------------------------------------------------------------
+#aop.py-----File name and treated as module name
+from kvr import KvrDivisionError
+def  division(a,b):
+	if(b==0):  # at this statement when b ==0 then we must raise KvrDivisionError explicitly
+		raise KvrDivisionError   
+	else:
+		c=a/b
+		return c
+----------------------------------------------------------------------------------------------------------------------------
+3. Program for Handling the exceptions (try, except...):
+----------------------------------------------------------------------------------
+#aopdemo.py
+from aop import division
+from kvr import KvrDivisionError
+try:
+	a=float(input("Enter First Value:"))
+	b=float(input("Enter Second Value:"))
+	result=division(a,b) # calling the function and raised an exception
+except KvrDivisionError:
+	print("Don't enter zero for den....")
+except ValueError:
+	print("Don't enter Strs/ alpha-numerics / special symbols:")
+else:
+	print("Division={}".format(result))
+finally:
+	print("i am from finally block")
+========================================X==================================

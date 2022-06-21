@@ -1,0 +1,40 @@
+		==================================================
+				Introductions to Functions
+		==================================================
+=>In Real time , Functions concept is used for "Performing Some Operation and Provides				Code-Re-usability "
+
+=>In the context of functions, two types of Programming languages. They are
+		a) Un-Structured programming Languages
+		b) Structured programming Languages
+
+a) Un-Structured programming Languages:-
+   --------------------------------------------------------------
+=> In Un-Structured programming Languages, we don't have the concept of functions.
+Examples:
+		GW-Basic
+=>Since Un-Structured programming Languages does not contain functions concept, we have following limitations.
+	1) Application Development time is more
+	2) Application Memory space is More
+	3 )Application Exeution time is more
+	4) Application Performnce is Degraded
+	5) Redundecy (Duplication) of the code is more.
+=>To overcome these problems of Un-structured Programming languages(Without Functions) , we use Functions concept which is provided by Structured Progr lang.
+----------------------------------------------------------------------
+b) Structured programming Languages:-
+   --------------------------------------------------------------
+=> In Structured programming Languages, we  have the concept of functions.
+Examples:
+		C,CPP,PYTHON,JAVA....etc
+=>Since Structured programming Languages  contains functions concept, we have following Advantages.
+	1) Application Development time is Less
+	2) Application Memory space is Less
+	3 )Application Exeution time is Less
+	4) Application Performnce is enahnced
+	5) Redundecy (Duplication) of the code is Minimized.
+==================================================================
+Definition of Function:
+------------------------------------
+=>Sub Program of Main Program is called Functions
+                         (OR)
+=>A part of main program is Function
+=======================================================
